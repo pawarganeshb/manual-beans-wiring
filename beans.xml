@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+<!--
+	private String owner;
+	private double monthlyIncome;
+	private int totalRooms;
+-->
+	<bean id="wingc" class="wing_c.WingC">
+		<constructor-arg value="Satish Mane"/>
+		<constructor-arg value="104000"/>
+		<constructor-arg value="6"/>
+	</bean>
+<!--
+	private String owner;
+	private double monthlyIncome;
+	private int totalRooms;
+	private WingC c;
+-->	
+	<bean id="wingb" class="wing_b.WingB">
+		<constructor-arg value="Jay Mane"/>
+		<constructor-arg value="54000"/>
+		<constructor-arg value="3"/>
+		<constructor-arg ref="wingc"/>
+	</bean>
+<!--
+	private String owner;
+	private double monthlyIncome;
+	private int totalRooms;
+	private WingB b;
+-->
+	<bean id="winga" class="wing_a.WingA">
+		<constructor-arg value="Kiran Ganesh Pawar"/>
+		<constructor-arg value="75000"/>
+		<constructor-arg value="7"/>
+		<constructor-arg ref="wingb"/> 
+	</bean>
+
+</beans>
