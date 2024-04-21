@@ -31,7 +31,7 @@
 	private WingB b;
 -->
 	<bean id="winga" class="wing_a.WingA">
-		<constructor-arg value="Kiran Ganesh Pawar"/>
+		<constructor-arg value="Ganesh Pawar"/>
 		<constructor-arg value="75000"/>
 		<constructor-arg value="7"/>
 		<constructor-arg ref="wingb"/> 
